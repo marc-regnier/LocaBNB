@@ -6,6 +6,7 @@
     <title>LocaBNB - {% block title %}Bienvenue sur LocaBNB!{% endblock %}</title>
     {% block stylesheets %}
     <link rel="stylesheet" href="https://bootswatch.com/4/sandstone/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/">
     {% endblock %}
 </head>
 
@@ -22,6 +23,9 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="{{path('homepage')}}">Accueil</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{path('ads_index')}}">Annonces</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
